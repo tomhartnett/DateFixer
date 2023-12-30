@@ -17,6 +17,24 @@ struct ContentView: View {
     @State private var inputDate = Date()
     @State private var correctedDate = ""
 
+    var plusOrMinus: String {
+        referenceDate1 < referenceDate2 ? "+=" : "-="
+    }
+
+    var offset: String {
+        let comps = Calendar.autoupdatingCurrent.dateComponents([.year, .month, .day, .hour, .minute],
+                                                                from: referenceDate1,
+                                                                to: referenceDate2)
+
+        let year = abs(comps.year ?? 0)
+        let month = abs(comps.month ?? 0)
+        let day = abs(comps.day ?? 0)
+        let hour = abs(comps.hour ?? 0)
+        let minute = abs(comps.minute ?? 0)
+
+        return "\(year):\(month):\(day) \(hour):\(minute):0"
+    }
+
     var body: some View {
         VStack {
             DatePicker(selection: $referenceDate1, displayedComponents: [.date, .hourAndMinute]) {
@@ -35,6 +53,13 @@ struct ContentView: View {
             .onChange(of: referenceDate2) { _, _ in
                 calculate()
                 saveDates()
+            }
+
+            HStack(spacing: 16) {
+                Text("\(plusOrMinus) \(offset)")
+                Button("Copy") {
+                    UIPasteboard.general.string = offset
+                }
             }
 
             Divider()

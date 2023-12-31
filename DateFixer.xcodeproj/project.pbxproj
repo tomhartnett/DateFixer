@@ -12,6 +12,7 @@
 		E2A7C3722AE94B40009B7C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A7C3712AE94B40009B7C7E /* Assets.xcassets */; };
 		E2A7C3752AE94B40009B7C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A7C3742AE94B40009B7C7E /* Preview Assets.xcassets */; };
 		E2A7C37E2AE971D8009B7C7E /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A7C37D2AE971D8009B7C7E /* DateFormatters.swift */; };
+		E2BAE1052B41C0A600DD3AC1 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BAE1042B41C0A600DD3AC1 /* AppIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		E2A7C3712AE94B40009B7C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A7C3742AE94B40009B7C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2A7C37D2AE971D8009B7C7E /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+		E2BAE1042B41C0A600DD3AC1 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		E2A7C36C2AE94B3E009B7C7E /* DateFixer */ = {
 			isa = PBXGroup;
 			children = (
+				E2BAE1042B41C0A600DD3AC1 /* AppIcon.swift */,
 				E2A7C36D2AE94B3E009B7C7E /* DateFixerApp.swift */,
 				E2A7C36F2AE94B3E009B7C7E /* ContentView.swift */,
 				E2A7C37D2AE971D8009B7C7E /* DateFormatters.swift */,
@@ -142,6 +145,7 @@
 			files = (
 				E2A7C37E2AE971D8009B7C7E /* DateFormatters.swift in Sources */,
 				E2A7C3702AE94B3E009B7C7E /* ContentView.swift in Sources */,
+				E2BAE1052B41C0A600DD3AC1 /* AppIcon.swift in Sources */,
 				E2A7C36E2AE94B3E009B7C7E /* DateFixerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
